@@ -1,0 +1,228 @@
+/* Reset & General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Futuristic Background */
+body {
+    background: #0D0D0D;
+    color: white;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 1000; /* Ensures sidebar is on top */
+}
+
+/* Sidebar Links */
+#sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+#sidebar ul li {
+    padding: 15px 20px;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: 0.2s;
+}
+
+#sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Close Button */
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Ensures navbar stays above everything */
+}
+
+/* Navbar Left Section */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Menu Button */
+#menu-btn {
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+}
+
+/* Project Name */
+.project-name {
+    font-size: 22px;
+    color: #00FFAA;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Profile Button */
+.profile-btn {
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: url('IMG2.jpg') center/cover no-repeat; /* Background image */
+    position: relative;
+}
+
+/* Glassmorphism Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #00FFAA;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.learn-btn, .contact-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.learn-btn {
+    background: #00AAFF;
+    color: white;
+}
+
+.learn-btn:hover {
+    background: #0088CC;
+}
+
+.contact-btn {
+    background: #00FFAA;
+    color: black;
+}
+
+.contact-btn:hover {
+    background: #00CC88;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .project-name {
+        font-size: 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}

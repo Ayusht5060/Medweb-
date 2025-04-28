@@ -1,0 +1,111 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Background */
+body {
+    display: flex;
+    background: #0D0D0D;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #121212;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00FFAA;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar ul li a:hover, .active {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.profile i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    margin: 20px 0;
+}
+
+.status-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    font-size: 18px;
+}
+
+.healthy {
+    border-left: 5px solid #00FFAA;
+}
+
+.moderate {
+    border-left: 5px solid #FFD700;
+}
+
+.critical {
+    border-left: 5px solid #FF3333;
+}
+
+/* Charts */
+.charts {
+    margin-top: 30px;
+}

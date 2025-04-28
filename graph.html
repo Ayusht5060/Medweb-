@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Graph - Tissue Monitoring</title>
+    <link rel="stylesheet" href="graph.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Real-Time Tissue Monitoring</h2>
+        
+        <div class="chart-container">
+            <canvas id="tissueChart"></canvas>
+        </div>
+
+        <div class="status-bar">
+            <span id="statusLabel" class="status-label normal">Normal</span>
+        </div>
+    </div>
+
+    <script src="graph.js"></script>
+</body>
+</html>
